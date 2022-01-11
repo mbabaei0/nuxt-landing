@@ -1,0 +1,123 @@
+
+.installPopup{
+  // height: 100vh;
+  @media only screen and (min-width: $bp-medium) {
+    display: none;
+  }
+  width: 100vw;
+  position: fixed;
+  z-index: 1000;
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  direction: ltr;
+  left: 0;
+  //background: white;
+ // box-shadow: var(--box-shadow);
+  direction: var(--direction);
+  // grid-template-columns: repeat(8 , 1fr);
+  //grid-template-columns: repeat(8 , 1fr);
+  &__body{
+    margin: 1rem ;
+    grid-column: 3/7;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+   // box-shadow: $box-shadow;
+    //padding: 2rem;
+    // width: 100%;
+    // top: 10%;
+   // position: absolute;
+   // width: 100%;
+    //height: 40vh;
+    bottom: 0;
+    z-index: 3;
+    ul{
+      li{
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        span{
+          padding:0 2rem;
+        }
+        .icon{
+          color:var(--blue-color)
+        }
+      }
+    }
+    vg-player video{
+      height: initial;
+    }
+    &-close{
+      display: flex;
+      justify-content: flex-end;
+      i{
+        cursor: pointer;
+      }
+    }
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1/-1;
+      //top: 0;
+    }
+  }
+
+  &__header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    direction: var(--direction);
+    border-top: 2px solid var(--p-color);
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 1rem ;
+    padding: 2rem;
+    &-logo{
+      margin: 1rem ;
+      width: 50%;
+      height: 4rem;
+      .img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    span{
+      font-weight: lighter;
+
+    }
+    &-appName{
+      color: var(--p-color);
+      padding: 0.5rem;
+      font-weight: bold!important;
+    }
+
+    .icon{
+      cursor: pointer;
+    }
+  }
+  &__action{
+    display: flex;
+    justify-content: stretch;
+    padding: 2rem;
+    button{
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+
+  &__backDrop{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+
+
+  }
+}

@@ -1,0 +1,99 @@
+
+.btn {
+  border: none;
+  border-radius: var(--btn-radius) ;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding:  1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover{
+    filter: saturate(1);
+    box-shadow: var(--box-shadow);
+  }
+  .icon{
+    margin:0 1rem;
+    fill:  currentColor;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+
+  }
+}
+.btn-p {
+  @extend .btn;
+   
+  background-image: linear-gradient(to right, var(--p-color),var(--s-color)); ;
+  color: white;
+}
+.btn-s {
+  @extend .btn;
+  border: solid 2px var(--p-color);
+  color:  var(--p-color);
+  background: none;
+}
+.btn-download {
+  @extend .btn;
+  background-color: var(--q-color-opec)!important;
+  color: var(--blue-color)!important;
+  font-weight: lighter;
+  padding: 0 0.5rem;
+}
+.btn-danger {
+  @extend .btn;
+  background-color: var(--p-color-opec);
+  color: white !important;
+}
+.btn-alert {
+  @extend .btn;
+  background-color: #ffc5473b;
+  color: var(--d-color) !important;
+}
+.btn-blue {
+  @extend .btn;
+  background-color: var(--blue-color);
+  color: white;
+}
+.btn-gray {
+  @extend .btn;
+  background-color:white ;
+  color:  var(--text-light) ;
+  border: 1px solid var(--g5);
+}
+.btn-outline {
+  @extend .btn;
+  background-color:white ;
+  color:  var(--p-color) ;
+  border: 1px solid currentColor;
+}
+.btn-outline-blue {
+  @extend .btn;
+  background-color:white ;
+  color:  var(--blue-color) ;
+  border: 1px solid currentColor;
+}
+
+button:disabled,
+button[disabled]{
+  filter: grayscale(0.2);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.disabled,.disabeld:hover{
+  color: var(--g4);
+  filter: grayscale(1) saturate(0) !important;
+  cursor: not-allowed;
+}
+
+
+.btn-cursor-text{
+  cursor: text !important;
+}
+
+.btn-cursor-pointer{
+  cursor: pointer;
+}

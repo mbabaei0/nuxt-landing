@@ -1,0 +1,46 @@
+
+
+.boxShadowAnimation{
+    animation: boxShadow 4s ease infinite;
+}
+@keyframes spring {
+    0% {
+        opacity: .7;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(5);
+    }
+}
+@keyframes bonce {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: .9;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: .9;
+        transform: scale(10);
+    }
+}
+@keyframes boxShadow{
+    0% {
+        box-shadow:  0px 0px 0px  0px var(--p-color);
+        
+    }
+
+    50% {
+        box-shadow:  0px 0px 28px  1px var(--p-color);
+
+    }
+    100% {
+        box-shadow:  0px 0px 0px  0px var(--p-color);
+       
+    }
+}

@@ -1,0 +1,56 @@
+:root {
+  --p-color: #945f9d;
+  --s-color: #35aaca;
+  --e-color: #ff5959;
+  --d-color: #ffc447;
+  --border-color: #bebebe;
+
+  // grey
+  --g1: #8a8a8a;
+  --g2: #aaaaaa;
+  --g3: #bebebe;
+  --g4: #cecece;
+  --g5: #e0e0e0;
+  --g6: #f3f4f5;
+
+  // radius
+  --btn-radius: 9px;
+  --border-radius: 8px;
+ 
+  // text
+  --text-dark : #2a2a2a;
+  --text-light : #aaaaaa;
+  --font-size : 1.6rem;
+  --h1-font-size : 4.6rem;
+  --h2-font-size : 3.8rem;
+  --h3-font-size : 3.2rem;
+  --h4-font-size : 2rem;
+  --h5-font-size : 1.6rem;
+
+  // direction
+  --direction: rtl;
+  --textAlign: right;
+  --textAlignRev: left;
+  --rotation: 0;
+  --postition-right: 1.3rem;
+  --postition-right-bullet: -6px;
+  --before-border: 0 1px 0 0;
+  --before-border-bold: 0 2.5px 0 0;
+  --borderRadius-half: 0 var(--border-radius) var(--border-radius) 0;
+
+
+  // shadow
+  --box-shadow:  0 7px 11px 1px rgba(0, 0, 0, 0.04);
+  --box-shadow-big: 0 14px 22px 0 rgba(0, 0, 0, 0.06);
+
+
+}
+
+
+
+// responsive design bp
+$bp-largest: 75em;
+$bp-large:62em;
+$bp-medium:50em;
+$bp-small:42em;
+

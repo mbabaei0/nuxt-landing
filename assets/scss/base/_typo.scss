@@ -1,0 +1,121 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  font-family: BYekan;
+  src: local(BYekan-Regular),
+  url("~/assets/fonts/BYEKAN.TTF") format("truetype");
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  font-family: Fanavari;
+  src: local(Fanavari-Regular),
+  url("~/assets/fonts/FANAVARI.TTF") format("truetype");
+}
+
+// @font-face{
+//   font-family:dana;
+//   src: url(/client/assets/fonts/dana-regular.woff2);
+//   font-display: swap;
+// }
+// @font-face{
+//   font-family: dana;
+//   src: url(/assets/fonts/dana-bold.woff2);
+//   font-weight: bold;
+//   font-display: swap;
+// }
+// @font-face{
+//   font-family:dana;
+//   src: url(/assets/fonts/dana-light.woff2);
+//   font-weight: lighter;
+// }
+
+* {
+  font-family: BYekan;
+  // color: $secondary-color;
+}
+
+.heading {
+  font-family: Fanavari!important;
+  font-size: 3rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  &-1 {
+    font-size: var(--h1-font-size);
+    font-weight: bold;
+    @extend .heading;
+  }
+  &-2 {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    @extend .heading;
+  }
+
+  &-1,
+  &-2 {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 37%;
+      bottom: -8px;
+      height: 1px;
+      width: 25%;
+      margin: 0 auto;
+      border-bottom: 2px solid var(--p-color);
+    }
+    margin-bottom: 2rem;
+  }
+  &-3 {
+    font-size: var(--h3-font-size);
+    font-weight: bold;
+    @extend .heading;
+  }
+  &-4 {
+    font-size: var(--h4-font-size);
+    @extend .heading;
+  }
+  &-5 {
+    font-size: var(--h5-font-size);
+    @extend .heading;
+  }
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+a {
+
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--s-color);
+}
+.nuxt-link-exact-active {
+  font-weight: bold;
+  color: var(--p-color)!important;
+}
+p{
+  font-size: 2.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+
+}
+// base colorise classes
+.sucsess{
+  color:var(--p-color) !important
+}
+.err{
+  color:var(--t-color)!important
+}
+.danger{
+  color:var(--f-color)!important
+}

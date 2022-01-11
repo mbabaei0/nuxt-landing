@@ -1,0 +1,231 @@
+.serviceBox {
+    width: 267px;
+    height: 267px;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    border-radius: 46px;
+    -webkit-backdrop-filter: blur(43px);
+    backdrop-filter: blur(43px);
+    background-color: #ffffff40;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    &__icon {
+        width: 115.3px;
+        border-radius: 50%;
+        height: 115.3px;
+
+        padding: 30.8px 34.9px 36.5px 35.8px;
+        background-image: linear-gradient(to bottom, var(--p-color), var(--s-color));
+    }
+
+    &:hover {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: #ffffff9a;
+    }
+}
+.projectBox {
+    overflow: hidden;
+    cursor: pointer;
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    width: 378px;
+    height: 378px;
+    margin: 43px 0 51px 49px;
+    position: relative;
+
+    &__drop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // opacity: 0.34;
+        // border-radius: 46px;
+        // -webkit-backdrop-filter: blur(5px);
+        // backdrop-filter: blur(5px);
+        // background-image: linear-gradient(to bottom, var(--p-color), var(--s-color));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: Fanavari;
+        font-size: 40px;
+        z-index: 10;
+        transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+        span {
+            font-family: Fanavari !important;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 1px 1px #00000066;
+            padding: 1rem;
+        }
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        background-image: linear-gradient(to bottom, var(--p-color), var(--s-color));
+        border-radius: 46px;
+        opacity: 0.34;
+        transition: all 0.8s ease;
+    }
+
+    &:hover {
+        &:after {
+            opacity: 0;
+        }
+        .projectBox__drop {
+            top: 100%;
+            // opacity: 0;
+        }
+    }
+}
+.blogBox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+
+    &__image {
+        width: 10rem;
+        height: 10rem;
+        transform: translateX(-19px);
+        z-index: 1000;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__drop {
+        display: flex;
+        flex-direction: column;
+        height: 10rem;
+        overflow: hidden;
+        padding-right:20px;
+        justify-content: center;
+        font-family: Fanavari;
+        font-size: 3rem;
+        z-index: 10;
+        width: 300px;
+        border-radius: 46px;
+        -webkit-backdrop-filter: blur(43px);
+        backdrop-filter: blur(43px);
+        background-color: #ffffff40;
+        border-radius: 20px;
+        transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+        span {
+            font-family: Fanavari !important;
+            padding-right: 1rem;
+        }
+        small{
+            font-size: 1rem;
+            color:grey;
+            padding-right: 1rem;
+        }
+    }
+
+    &:hover {
+        
+        .blogBox__drop {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            background-color: #ffffff9a;
+        }
+    }
+}
+.logoBox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0.7rem ;
+
+    &__image {
+        border-radius: 46px;
+        -webkit-backdrop-filter: blur(43px);
+        backdrop-filter: blur(43px);
+        background-color: #ffffff40;
+        border-radius: 20px;
+        transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+        width: 12rem;
+        height: 12rem;
+        transform: translateX(-19px);
+        z-index: 1000;
+        position: relative;
+        border-radius: 32px;
+        overflow: hidden;
+        padding: 1rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    
+
+    &:hover {
+        
+        .logoBox__image {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            background-color: #ffffff9a;
+        }
+    }
+}
+.contactBox {
+   
+    margin-left: 5rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    &__icon {
+        width: 88px;
+        border-radius: 50%;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30.8px 34.9px 36.5px 35.8px;
+        background-image: linear-gradient(to bottom, var(--p-color), var(--s-color));
+        transition: all 0.5s ease;
+       
+    }
+    &__title {
+        padding-top: 10px;
+        color: grey;
+    }
+
+    &:hover {
+        .contactBox__icon{
+            transition: all 0.5s ease;
+            background-image: linear-gradient(to bottom, var(--s-color),var(--p-color));
+        }
+    }
+    
+}

@@ -1,0 +1,21 @@
+
+.main {
+  direction: rtl;
+  // height: 100vh;
+  // overflow: hidden;
+  display: grid;
+  grid-template-columns: [full-start] 1fr [full-end];
+  // grid-template-rows: min-content min-content 1fr;
+  @media only screen and (max-width: $bp-medium) {
+    // grid-template-columns: [nav-start] 0rem [nav-end body-start]  1fr [body-end];
+  }
+}
+.section {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: [full-start] 6rem [center-start] repeat(10, [col-start] 1fr [col-end])  [center-end] 6rem [full-end];
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: [full-start] 2rem [center-start] repeat(6, [col-start] 1fr [col-end])  [center-end] 2rem [full-end];
+  }
+}
+
