@@ -20,7 +20,9 @@
         </ul>
         <div class="nav__actions">
           <button class="btn-s">دریافت رزومه</button>
-          <button class="btn-p boxShadowAnimation">سفارش پروژه</button>
+          <button class="btn-p boxShadowAnimation">
+            <NuxtLink to="/order"> سفارش پروژه</NuxtLink>
+          </button>
         </div>
       </nav>
     </section>

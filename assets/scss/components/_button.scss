@@ -26,9 +26,13 @@
 }
 .btn-p {
   @extend .btn;
-   
+
   background-image: linear-gradient(to right, var(--p-color),var(--s-color)); ;
-  color: white;
+  color: white!important;
+  a{
+    color: white!important;
+    text-decoration: none
+  }
 }
 .btn-s {
   @extend .btn;

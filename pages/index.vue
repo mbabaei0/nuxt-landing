@@ -45,7 +45,9 @@
             </p>
             <div class="about__desc-actions">
               <button class="btn-s">ریافت رزومه</button>
-              <button class="btn-p boxShadowAnimation">سفارش پروژه</button>
+            <button class="btn-p boxShadowAnimation">
+            <NuxtLink to="/order"> سفارش پروژه</NuxtLink>
+          </button>
             </div>
           </div>
           <div class="about__photo">
@@ -87,7 +89,9 @@
             </div>
           </div>
           <div class="action">
-            <button class="btn-p">سفارش پروژه</button>
+            <button class="btn-p boxShadowAnimation">
+            <NuxtLink to="/order"> سفارش پروژه</NuxtLink>
+          </button>
           </div>
         </div>
       </section>

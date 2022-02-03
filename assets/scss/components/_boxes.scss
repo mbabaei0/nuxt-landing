@@ -45,7 +45,9 @@
     height: 378px;
     margin: 43px 0 51px 49px;
     position: relative;
-
+    @media only screen and (max-width: $bp-medium) {
+      width: 290px;
+    }
     &__drop {
         position: absolute;
         top: 0;
@@ -136,6 +138,9 @@
         background-color: #ffffff40;
         border-radius: 20px;
         transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+        @media only screen and (max-width: $bp-medium) {
+          width: 200px;
+        }
         span {
             font-family: Fanavari !important;
             padding-right: 1rem;
@@ -148,12 +153,13 @@
     }
 
     &:hover {
-        
+
         .blogBox__drop {
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
             background-color: #ffffff9a;
         }
     }
+
 }
 .logoBox {
     cursor: pointer;
@@ -183,10 +189,10 @@
         }
     }
 
-    
+
 
     &:hover {
-        
+
         .logoBox__image {
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
             background-color: #ffffff9a;
@@ -194,7 +200,7 @@
     }
 }
 .contactBox {
-   
+
     margin-left: 5rem;
     margin-top: 5rem;
     cursor: pointer;
@@ -214,7 +220,7 @@
         padding: 30.8px 34.9px 36.5px 35.8px;
         background-image: linear-gradient(to bottom, var(--p-color), var(--s-color));
         transition: all 0.5s ease;
-       
+
     }
     &__title {
         padding-top: 10px;
@@ -227,5 +233,5 @@
             background-image: linear-gradient(to bottom, var(--s-color),var(--p-color));
         }
     }
-    
+
 }
