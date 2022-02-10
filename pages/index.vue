@@ -26,36 +26,8 @@
           </div>
         </div>
       </section>
-      <section class="section">
-        <div class="about">
-          <div class="about__desc">
-            <h3 class="heading-2">دربـاره مــن</h3>
-            <p>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-              کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
-              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای
-              طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
-              فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری
-              موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد
-              نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
-              دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-            </p>
-            <div class="about__desc-actions">
-              <button class="btn-s">ریافت رزومه</button>
-            <button class="btn-p boxShadowAnimation">
-            <NuxtLink to="/order"> سفارش پروژه</NuxtLink>
-          </button>
-            </div>
-          </div>
-          <div class="about__photo">
-            <img src="~/assets/img/about.webp" alt />
-          </div>
-        </div>
-      </section>
 
+      <About />
       <Services />
       <Projects />
 
@@ -65,36 +37,7 @@
 
       </section>
 
-      <section class="section">
-        <div class="services">
-          <h2 class="heading-2">ارتباط با من</h2>
-          <div class="servicesWrapper">
-            <div class="contactBox">
-              <div class="contactBox__icon">
-                <img src="~/assets/icons/book.svg" alt="" />
-              </div>
-              <div class="contactBox__title">اینستاگرام</div>
-            </div>
-            <div class="contactBox">
-              <div class="contactBox__icon">
-                <img src="~/assets/icons/book.svg" alt="" />
-              </div>
-              <div class="contactBox__title">تلگرام</div>
-            </div>
-            <div class="contactBox">
-              <div class="contactBox__icon">
-                <img src="~/assets/icons/book.svg" alt="" />
-              </div>
-              <div class="contactBox__title">ایمیل</div>
-            </div>
-          </div>
-          <div class="action">
-            <button class="btn-p boxShadowAnimation">
-            <NuxtLink to="/order"> سفارش پروژه</NuxtLink>
-          </button>
-          </div>
-        </div>
-      </section>
+      <Contactme />
       <footer class="footer">
         <div class="footer__item">
           <div class="footer__item-title">

@@ -1,6 +1,6 @@
 <template>
   <main>
-   <Services />
+   <Projects />
 
 
   </main>

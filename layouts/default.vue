@@ -12,8 +12,15 @@
           <li >
             <NuxtLink to="/services/all"> خدمات من</NuxtLink>
           </li>
-          <li>نمونه کارها</li>
-          <li>تماس با من</li>
+          <li>
+              <NuxtLink to="/portfolio/all"> نمونه کارها</NuxtLink>
+          </li>
+          <li>
+             <NuxtLink to="/about">دربار من </NuxtLink>
+          </li>
+          <li>
+             <NuxtLink to="/contact"> تماس با من </NuxtLink>
+          </li>
           <li>
             <NuxtLink to="/blog"> بلاگ</NuxtLink>
           </li>
