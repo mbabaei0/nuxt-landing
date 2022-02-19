@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fnuxt-landing\u002F_nuxt\u002Fstatic\u002F1645310289",layout:"default",error:a,serverRendered:true,routePath:"\u002Fservices\u002Fssic-sima",config:{_app:{basePath:"\u002Fnuxt-landing\u002F",assetsPath:"\u002Fnuxt-landing\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"4d6446a8"}}}}(null));
