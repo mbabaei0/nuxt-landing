@@ -35,5 +35,17 @@
     </section>
 
     <Nuxt />
+    <footer class="footer">
+        <div class="footer__item">
+          <div class="footer__item-title">
+            طراحی شده با <span>&hearts;</span> توسط:
+          </div>
+          <div class="footer__item-link">ســارا حق پرســت</div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">توسعه دهنده :</div>
+          <div class="footer__item-link">محــمد بابایی</div>
+        </div>
+      </footer>
   </main>
 </template>

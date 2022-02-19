@@ -1,0 +1,17 @@
+.portfolio {
+
+  &__left{
+    grid-column: center-start/7;
+    display: flex;
+    button{
+      margin : 0.5rem
+    }
+  }
+  &__rigth{
+    grid-column: 7/center-end;
+    display: flex;
+    button{
+      margin : 0.5rem
+    }
+  }
+}

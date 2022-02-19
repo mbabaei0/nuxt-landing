@@ -29,7 +29,7 @@
 
       <About />
       <Services />
-      <Projects />
+      <Projects :action="true" :limit="3" :title="'نمونه کارهای من'" />
 
       <section class="section blogsSection">
         <RecentPosts />
@@ -38,18 +38,7 @@
       </section>
 
       <Contactme />
-      <footer class="footer">
-        <div class="footer__item">
-          <div class="footer__item-title">
-            طراحی شده با <span>&hearts;</span> توسط:
-          </div>
-          <div class="footer__item-link">ســارا حق پرســت</div>
-        </div>
-        <div class="footer__item">
-          <div class="footer__item-title">توسعه دهنده :</div>
-          <div class="footer__item-link">محــمد بابایی</div>
-        </div>
-      </footer>
+
     </div>
   </main>
 </template>
