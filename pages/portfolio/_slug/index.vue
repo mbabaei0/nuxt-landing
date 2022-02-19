@@ -16,7 +16,7 @@
         </button>
       </div>
       <div class="portfolio__rigth">
-        <button v-for="sub in subs" :key="sub.title" class="btn-gray" @click="selectSoft(sub)">
+        <button v-for="sub in subs" :key="sub.title"  v-bind:class="{ 'btn-p': sub.selected }" class="btn-gray" @click="selectSoft(sub)">
           {{ sub.title }}
         </button>
       </div>
@@ -49,7 +49,6 @@ export default {
       const selectedSofts = this.softs.filter(soft => soft.selected).map(soft => soft.tag)
       const selectedSubs = this.subs.filter(soft => soft.selected).map(soft => soft.tag)
       this.selectedTags = [...selectedSofts, ...selectedSubs]
-      console.log(this.selectedTags)
     },
   },
 }
