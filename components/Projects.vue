@@ -4,7 +4,7 @@
       <h2 class="heading-2">{{title}}</h2>
       <div class="servicesWrapper">
         <template v-for="s of content">
-          <NuxtLink :to="'/services/' + s.slug">
+          <NuxtLink :to="'/portfolio/item/' + s.slug">
             <div class="projectBox">
               <div class="projectBox__image">
                 <img :src="'portfolio/' + s.img" alt="" />

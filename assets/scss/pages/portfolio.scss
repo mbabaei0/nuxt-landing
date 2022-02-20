@@ -2,6 +2,9 @@
 
   &__left{
     grid-column: center-start/7;
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: center-start/center-end;
+    }
     display: flex;
     button{
       margin : 0.5rem
@@ -9,6 +12,9 @@
   }
   &__rigth{
     grid-column: 7/center-end;
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: center-start/center-end;
+    }
     display: flex;
     button{
       margin : 0.5rem
