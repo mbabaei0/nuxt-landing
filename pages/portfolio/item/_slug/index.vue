@@ -1,9 +1,11 @@
 <template>
   <main>
-    <section class="section" v-if="content.length">
-      <br />
-      <br />
-      <h2 class="portfolio__left heading-2">{{ content[0].title }}</h2>
+    <br>
+    <br>
+
+    <section class="section" v-if="detail">
+
+      <h2 class="portfolio__left heading-2">{{ detail.title }}</h2>
       <div class="portfolio__left ">
         <button
           class="btn-p">
@@ -11,25 +13,16 @@
         </button>
       </div>
       <div class="portfolio__left">
-        {{ content[0].title }}
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
-        از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
-        سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
-        متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
-        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
-        نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
-        خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
-        داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
-        رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
-        پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+        {{ detail.desc }}
+
       </div>
       <div class="portfolio__rigth full-img-box" v-if="selectedImg">
-        <img :src="selectedImg.pathLong" />
+        <img :src="selectedImg" />
       </div>
       <div class="services" v-if="images.length">
         <VueSlickCarousel v-bind="slickOptions">
           <div v-for="(client, i) in images" :key="i" class="img-wrapper">
-            <img :src="client.pathLong" @click="selectImg(client)" />
+            <img :src="client" @click="selectImg(client)" />
           </div>
         </VueSlickCarousel>
       </div>
@@ -51,6 +44,7 @@ export default {
   data() {
     return {
       content: [],
+      detail: null,
       images: [],
       slickOptions: {
         dots: true,
@@ -70,20 +64,15 @@ export default {
         slug: this.$route.params.slug,
       })
       .fetch()
-  },
-  mounted() {
-    this.importAll(
-      require.context(`/static/portfolio/guiljann/`, true, /\.jpeg$/)
-    )
+    this.detail = await this.$content(`portfolio/${this.$route.params.slug}`)
+      .fetch()
+    this.images = this.detail.imgs.map(img => `portfolio/${this.$route.params.slug}/${img}`)
+    this.selectedImg = this.images[0]
   },
 
+
   methods: {
-    importAll(r) {
-      r.keys().forEach((key) => {
-        this.images.push({ pathLong: r(key), pathShort: key })
-      })
-      this.selectedImg = [this.images[0]]
-    },
+
     selectImg(client) {
       this.selectedImg = client
     },

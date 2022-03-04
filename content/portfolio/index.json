@@ -1,11 +1,4 @@
 [
-  {"title":"صفحه آرایی کتاب سیما", "slug":"ssic","img": "ssic-sima.png","type": "softwear", "tag": "indesign"},
-  {"title":"طراحی لوگو گیلجان", "slug":"guiljann","img": "bb.png","type": "subject", "tag": "illustrator"},
-  {"title":" نقاشی ", "slug":"c","img": "download.png", "type": "softwear", "tag": "design"},
-  {"title":"طراحی وکتور ", "slug":"e","img": "ssic-sima.png", "type": "softwear", "tag": "indesign"},
-  {"title":"طراحی زرافه دراز دین ", "slug":"f","img": "download.png", "type": "subject", "tag": "photoshop"},
-  {"title":"معماری کج ", "slug":"g","img": "bb.png", "type": "softwear", "tag": "arch"},
-  {"title":"فتوشادیییی ", "slug":"g","img": "bb.png", "type": "softwear", "tag": "photoshop"}
-
-
+  {"title":"صفحه آرایی کتاب سیما", "slug":"ssic","img": "ssic/ssic-sima.png","type": "softwear", "tag": "indesign"},
+  {"title":"طراحی لوگو گیلجان", "slug":"guiljann","img": "guiljann/images.jpeg","type": "subject", "tag": "illustrator"}
 ]
