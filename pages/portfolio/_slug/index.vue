@@ -4,6 +4,7 @@
       <br />
       <br />
       <h2 class="portfolio__left heading-2">نمونه کارها</h2>
+
       <div class="portfolio__left">
         <button
           v-for="(soft, i) in softs"

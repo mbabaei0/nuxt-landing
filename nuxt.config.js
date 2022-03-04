@@ -28,6 +28,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/supabase.client.js',
+
+
     // '@/plugins/vue-slick-carousel.js'
   ],
 
@@ -39,7 +41,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
+    '@nuxtjs/stylelint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,7 +50,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/toast',
+    '@nuxtjs/toast'
+
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

@@ -1,8 +1,21 @@
 <template>
   <main>
-    <NuxtLink to="/"> Home PAge </NuxtLink>
+    <!-- <NuxtLink to="/"> خانه </NuxtLink> -->
 
-    <nuxt-content :document="page" />
+    <!-- <nuxt-content :document="page" /> -->
+
+    <div class="hero contactHero">
+        <div></div>
+        <div class="hero__center">
+          <div class="hero__center-title">این صفحه به زودی راه اندازی می شود</div>
+          <br />
+          <div class="hero__center-sub-title">...</div>
+        </div>
+        <div></div>
+        <div></div>
+        <div class="hero__bg"></div>
+
+      </div>
   </main>
 </template>
 <script>

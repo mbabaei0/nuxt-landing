@@ -6,11 +6,49 @@
           <div></div>
           <div class="hero__center">
             <ul class="hero__center-social">
-              <li><img src="~/assets/icons/socail.svg" alt="" /></li>
-              <li><img src="~/assets/icons/social2.svg" alt="" /></li>
-              <li><img src="~/assets/icons/socail.svg" alt="" /></li>
-              <li><img src="~/assets/icons/social2.svg" alt="" /></li>
-              <li><img src="~/assets/icons/social2.svg" alt="" /></li>
+              <li>
+                <a href="tel:09214266125">
+                  <span class="icon-Layer--3"></span>
+                </a>
+
+              </li>
+              <li>
+                <a href="https://api.whatsapp.com/send?phone=9809214266125&text=hi%20sara" target="_blank">
+                  <span class="icon-Layer--2"></span>
+                </a>
+
+              </li>
+              <li>
+                <a href="https://t.me/Sarahaqparast" target="_blank">
+                  <span class="icon-Layer-2"></span>
+                </a>
+
+              </li>
+              <li>
+                 <a href="https://t.me/sarahaqparast" target="_blank">
+                  <span class="icon-Layer--5"></span>
+                </a>
+                </li>
+              <li>
+                <a href="https://t.me/sarahaqparast" target="_blank">
+                  <span class="icon-Group-8"></span>
+                </a>
+               </li>
+              <li>
+                <a href="https://t.me/sarahaqparast" target="_blank">
+                   <span class="icon-Layer--1"></span>
+                </a>
+               </li>
+              <li>
+                <a href="https://linkedin.com/in/sara-haqparast" target="_blank">
+                 <span class="icon-Layer--6"></span>
+                </a>
+                </li>
+              <li>
+                <a href="https://t.me/sarahaqparast" target="_blank">
+                 <span class="icon-Layer--4"></span>
+                </a>
+                </li>
             </ul>
             <div class="hero__center-title">ســارا حــق پرســت</div>
             <br />
@@ -32,13 +70,11 @@
       <Projects :action="true" :limit="3" :title="'نمونه کارهای من'" />
 
       <section class="section blogsSection">
-        <RecentPosts />
+        <!-- <RecentPosts /> -->
         <Customers />
-
       </section>
 
       <Contactme />
-
     </div>
   </main>
 </template>

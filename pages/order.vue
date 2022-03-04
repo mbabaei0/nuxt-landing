@@ -41,16 +41,22 @@
               </span>
               &nbsp;
               <a href="tel:+989214266125">
-                <button class="btn-s">تماس مستقیم</button></a
+                <button type="button" class="btn-s">تماس مستقیم</button></a
               >
             </div>
           </form>
-          <div v-else class="form__group">
-            <h1>سفارش شما با موفقیت ثبت
-            شد</h1>
+          <div v-else class="form__group suc">
             <br />
 
-            </div>
+            <h1>سفارش شما با موفقیت ثبت شد</h1>
+            <br />
+            <h3>لطفا منتظر تماس ما باشید</h3>
+
+            <br />
+            <button type="button" class="btn-s">
+              <NuxtLink to="/"> بازگشت به خانه</NuxtLink>
+            </button>
+          </div>
         </div>
       </section>
     </div>
@@ -90,9 +96,17 @@ export default {
       this.success = true
       this.$toast.success('سفارش شما با موفقیت ثبت شد', {
         duration: 5000,
+        position:  'bottom-center'
       })
       // this.$router.push("/");
     },
   },
 }
 </script>
+<style>
+.suc {
+      text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+</style>

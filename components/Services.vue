@@ -2,27 +2,30 @@
   <section class="section">
     <div class="services">
       <h2 class="heading-2">خدمــات من</h2>
+
       <div class="servicesWrapper">
         <div v-for="s of content" class="serviceBox">
-          <div class="serviceBox__icon">
-            <img src="~/assets/icons/book.svg" alt="" />
-          </div>
+          <NuxtLink :to="'/services/' + s.slug">
+            <div class="serviceBox__icon">
+              <span v-bind:class="s.icon"></span>
+            </div>
+          </NuxtLink>
+
           <div class="serviceBox__title">{{ s.title }}</div>
           <div class="serviceBox__link">
-            <NuxtLink :to="'/services/' + s.slug">مشاهده نمونه کار</NuxtLink>
+            <NuxtLink to="/portfolio/all"> مشاهده نمونه کارها</NuxtLink>
           </div>
         </div>
       </div>
       <div class="action">
-       <button class="btn-p boxShadowAnimation">
-            <NuxtLink to="/order"> سفارش پروژه</NuxtLink>
-          </button>
+        <button class="btn-p boxShadowAnimation">
+          <NuxtLink to="/order"> سفارش پروژه</NuxtLink>
+        </button>
       </div>
     </div>
   </section>
 </template>
 <script>
-
 export default {
   data() {
     return {

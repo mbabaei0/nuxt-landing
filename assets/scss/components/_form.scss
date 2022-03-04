@@ -19,15 +19,15 @@
         @media only screen and (max-width: $bp-medium) {
           width: 100%;
         }
-        &::after{
-          content: "";
-          width: 2rem;
-          height: 2rem;
-          position: absolute;
-          right: -5rem;
-          top: 0;
-          background-image: url(/assets/img/icon4Asset15mdpi.png);
-        }
+        // &::after{
+        //   content: "";
+        //   width: 2rem;
+        //   height: 2rem;
+        //   position: absolute;
+        //   right: -5rem;
+        //   top: 0;
+        //   background-image: url(/assets/img/icon4Asset15mdpi.png);
+        // }
         &:focus {
             outline: none;
            // box-shadow: 0 1rem 1.3rem rgba(black, .1);

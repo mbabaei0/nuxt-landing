@@ -1,7 +1,11 @@
 [
-  {"title":"شیت بندی", "slug":"sheet","icon": "book"},
-  {"title":"پرتفولیو", "slug":"portfolio","icon": "port"},
-  {"title":"رزومه سازی", "slug":"resume","icon": "resume"},
-  {"title":"کتاب زندگی", "slug":"resume","icon": "resume"}
+  {"title":"پرزانته مدارک معماری و شیت بندی", "slug":"sheet","icon": "icon-Layer--11"},
+  {"title":"طراحی  و صفحه آرایی کتاب و مجله و نشریه", "slug":"book","icon": "icon-Layer--31"},
+  {"title":"طراحی اینفوگرافیک و نمودار", "slug":"infopraphic","icon": "icon-Layer--21"},
+  {"title":"طراحی پورتفولیو و رزومه ", "slug":"resume","icon": "icon-Layer--61"},
+  {"title":"طراحی بنر سایت و المان های مرتبط ", "slug":"website","icon": "icon-Layer-21"},
+  {"title":"طراحی لوگو آیکن اختصاصی ", "slug":"logo","icon": "icon-Layer--8"},
+  {"title":"طراحی پست و پیج فضای مجازی ", "slug":"post","icon": "icon-Layer--51"},
+  {"title":"UI/ Ux ", "slug":"architect","icon": "icon-Layer-1"}
 
 ]
