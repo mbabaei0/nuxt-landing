@@ -7,6 +7,9 @@
             <img src="~/assets/img/logo.png" alt="" />
           </li>
           <li>
+          <NuxtLink to="/hbd">🎁 ماه تولد 🎁</NuxtLink>
+          </li>
+          <li>
           <NuxtLink to="/"> خانه</NuxtLink>
           </li>
           <li >
