@@ -6,7 +6,7 @@
       <div class="hero contactHero">
         <div></div>
         <div class="hero__center">
-          <div class="hero__center-title">ســارا حــق پرســت</div>
+          <div class="hero__center-title"> ســارا حــق پرســت</div>
           <br />
           <div class="hero__center-sub-title">طراح گــرافیک | معمــار</div>
         </div>
