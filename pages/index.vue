@@ -54,21 +54,15 @@
               </li>
             </ul>
 
-            <button
-              style="z-index: 1000000; font-size : 2rem"
-              class=" btn-p boxShadowAnimation"
-            >
-              <NuxtLink to="/hbd">🥳 برای شروع ماه تولد کلیک کنید🔥</NuxtLink>
-            </button>
-                <span class="hero__center-sub-title">تولدت مبارک</span>
+
 
             <div class="hero__center-title">
 
-              🎈 ســارا حــق پرســت 🎉
+               ســارا حــق پرســت
             </div>
             <br />
             <div class="hero__center-sub-title">
-              طراح گــرافیک | معمــار (کوچولوی من)
+              طراح گــرافیک | معمــار
             </div>
           </div>
           <div></div>

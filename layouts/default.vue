@@ -6,9 +6,7 @@
           <li class="nav__menu-logo">
             <img src="~/assets/img/logo.png" alt="" />
           </li>
-          <li>
-          <NuxtLink to="/hbd">🎁 ماه تولد 🎁</NuxtLink>
-          </li>
+
           <li>
           <NuxtLink to="/"> خانه</NuxtLink>
           </li>
@@ -26,6 +24,10 @@
           </li>
           <li>
             <NuxtLink to="/blog"> بلاگ</NuxtLink>
+          </li>
+
+           <li>
+          <NuxtLink to="/hbd">🎁  تولد </NuxtLink>
           </li>
         </ul>
         <div class="nav__actions">
